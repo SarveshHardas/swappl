@@ -22,7 +22,7 @@
           fontFamily: {
             'bayon': ['Bayon', 'serif'],
             'anton': ['Anton'],
-            'be-veitnam-pro': ['Be veitnam Pro', 'serif'],
+            'be-veitnam-pro': ['Be Veitnam Pro', 'serif'],
             'actor': ['Actor', 'serif'],
             'abeezee': ['ABeeZee', 'serif'],
           },
@@ -31,10 +31,11 @@
     }
   </script>
   <style>
+    @import url('https://fonts.cdnfonts.com/css/special-gothic');
     .bg-gradient-custom {
       background: linear-gradient(
         to bottom right,
-        #FFC88D,
+        #ffc88d ,
         #000000 45%
       );
     }
@@ -74,14 +75,14 @@
 <body class="bg-gradient-custom text-white">
   <section id="home">
   <header id="" class="bg-[#5325b8] w-full">
-    <nav class="flex items-center justify-between max-w-6xl mx-auto h-20">
-      <h1 class="text-white font-anton font-normal text-5xl tracking-[-0.02em]">
+    <nav class="flex items-center justify-between max-w-6xl mx-auto h-15">
+      <h1 class="text-4xl text-white tracking-wide font-bold" style="font-family: 'Special Gothic Condensed', sans-serif;">
         SWAPPLE
       </h1>
       <div class="flex items-center gap-6">
-        <a href="#home" class="text-white text-2xl hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">Home</a>
-        <a href="#our-businesses" class="text-white text-2xl hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">Our Business</a>
-        <a href="#about-us" class="text-white text-2xl hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">About Us</a>
+        <a href="#home" class="text-white text-l hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">Home</a>
+        <a href="#our-businesses" class="text-white text-l hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">Our Business</a>
+        <a href="./ourStory.html" class="text-white text-l hover:text-[#5325b8] hover:bg-white px-3 py-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg">About Us</a>
         <button id="menuButton" class="text-white hover:text-[#5325b8] hover:bg-white p-2 transition-colors duration-200 rounded-tl-lg rounded-bl-lg rounded-br-lg ml-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="4" y1="12" x2="20" y2="12"></line>
@@ -122,18 +123,26 @@
       });
     }
   </script>  
-  <div class="flex flex-col md:flex-row min-h-screen">
-    <div class="min-h-screen w-full bg-gradient-custom p-10 flex flex-col justify-center">
-      <h1 class="text-4xl md:text-6xl font-extrabold fontFamily-Bayon leading-tight">
-        TURNING YOUR <span class="text-purple-300">DREAMS</span>,<br>
-        INTO <span class="text-purple-300">REALITY</span>
-      </h1>
-      <p class="mt-6 text-gray-200 max-w-xl">
-        <span class="text-yellow-300 font-semibold">Swapple Solutions Pvt Ltd</span> is a fast-growing company, innovating to solve future challenges. We empower businesses with cutting-edge technology and strategies.
+  <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-gradient-custom">
+    <div class="md:w-1/2 text-left space-y-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        <span class="whitespace-nowrap">TURNING YOUR <span style="color: #5325b8;">DREAMS</span>,</span><br />
+        INTO <span style="color: #5325b8;">REALITY</span>
+      </h1>      
+      <p class="text-white text-lg max-w-md">
+        <span style="color: #ff9e8e;" class="font-semibold">Swapple Solutions Pvt Ltd</span> is a fast-growing company,
+        innovating to solve future challenges. We empower businesses with cutting-edge technology and strategies.
       </p>
-      <button class="mt-8 w-fit px-6 py-2 border-2 border-white text-white rounded-full hover:bg-white hover:text-black transition">
+      <button class="text-white px-6 py-2 rounded-full transition duration-300" style="border: 2px solid #5325b8; color: #5325b8;" onmouseover="this.style.backgroundColor='#5325b8'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5325b8';">
         Get in touch
       </button>
+    </div>
+  
+    <div class="md:w-1/2 mt-10 md:mt-12 flex justify-center md:justify-end">
+      <img src="./homepg-video.gif" alt="Tech animation" class="w-64 md:w-[360px] object-contain" />
+    </div>
+  </section>
+  
     </div>
   </div>
 
@@ -159,7 +168,7 @@
 
   <section id="our-businesses">
   <div class="ml-[200px] mt-[200px] mb-[100px]">
-    <h1 class="text-4xl md:text-6xl font-extrabold fontFamily-Bayon leading-tight">Our Businesses</h1>
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" style="font-family: 'Special Gothic Condensed', sans-serif;">OUR BUSINESSES</h1>
     <p class="fontFamily-bayon mt-[40px]">Swapple solution operates across <br>tech, e-commerce, consulting<br> and product innovation-delivering smart, scalable solutions.</p>
   </div>
   <div class="flex justify-center gap-[150px] p-4 ">
@@ -219,14 +228,14 @@
       <span class="mx-5">#JOIN-OUR-TEAM</span> |
       <span class="mx-5">#SWAPPLERS</span> |
       <span class="mx-5 text-red-300">INTERNSHIP</span> |
-      <span class="mx-5"><a href="#">APPLY NOW</a></span>
+      <span class="mx-5"><a href="./internship.html">APPLY NOW</a></span>
       </marquee>
     </div>
   </div>
 </section>
 
-<section id="about-us">
-  <div class="flex items-center justify-center min-h-screen">
+<section id="about-us" class="bg-gradient-to-br from-[#191919] to-[#ffca69 84%]">
+  <div class="flex items-center justify-center min-h-screen ">
     <div class="w-[810px] h-[392px] p-6 bg-[#191919] rounded-lg text-left">
       <h1 class="text-5xl font-bold text-[#5325b8]">SWAPPL-SHIP</h1>
       <p class="text-lg text-white mt-2">THE NEW GEN INTERNSHIP PROGRAM</p>
@@ -234,15 +243,11 @@
       <p class="text-white text-base text-2xl">
         Unlock your potential with the Swappl-Ship Program! Gain<br>hands-on experience, work on real-world projects, and<br>collaborate with industry experts. Elevate your skills and<br>kick-start your career with us!
       </p>
-      <!-- <div class="flex justify-end">
-        <span class="inline-flex items-center px-2 bg-[#5325b8] rounded">
-          <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2v-2z"/>
-          </svg>
-        </span>
-      </div> -->
+      <div class="flex items-center justify-center w-60 h-15 border-4 border-[#5325b8] rounded-lg ml-[35%] mt-[35px]">
+        <a href="./internship.html"><span class="text-3xl font-bold text-[#5325b8]">VIEW</span></a>
+      </div>
+      </div>
     </div>
-  </div>
   <footer class="flex items-center justify-center">
     <div class="w-full bg-[#5325b8] text-white p-4">
       <div class="flex justify-around max-w-4xl mx-auto">
@@ -286,7 +291,7 @@
         </div>
       </div>
       <div class="text-center text-xs mt-4 text-gray-400">
-        Copyright © 2020 All rights reserved | Block is made with by Mudassar Chaudhary
+        Copyright © 2020 All rights reserved @SWAPPLE
       </div>
     </div>
   </footer>

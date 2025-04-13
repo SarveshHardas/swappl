@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Armata&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #3cde0d;
+  --secondary-color: black;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+}
+
+/* App Starts Here */
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+/* header section starts here */
+.header {
+  width: 100%;
+  height: auto;
+  background: #5325b8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px min(75px, 8%);
+}
+
+.header .logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* .hamburger menu starts here */
+.hamburger {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .hamburger-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.bar {
+  height: 2px;
+  width: 50%;
+  background-color: white;
+}
+
+.hamburger-btn {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.hamburger-btn:hover {
+  transform: rotate(0deg);
+}
+
+.bar-1 {
+  width: 25%;
+}
+
+.bar-3 {
+  width: 25%;
+}
+/* hamburger menu Ends here */
+/* header section Ends here */
+
+/* main section starts here  */
+
+.main-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(
+    from 173.22deg at 50.03% 38.93%,
+    #ed91fe -51.92deg,
+    #5325b8 72.69deg,
+    #090909 190.38deg,
+    #ed91fe 308.08deg,
+    #5325b8 432.69deg
+  );
+}
+.main {
+  width: 80%;
+  max-width: 1440px;
+  background: #0000004d;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px 0px;
+  padding: 30px 60px;
+}
+
+.main > h1 {
+  color: #ffff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
+
+.main > h4 {
+  color: #ffff;
+  font-family: "Armata", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -2%;
+  margin-bottom: 10px;
+}
+
+.bottom-bar {
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Cards section starts here  */
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: #5325b8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px 50px;
+  color: white;
+  margin-top: 50px;
+  width: 250px;
+}
+
+.card img {
+  margin-bottom: 35px;
+}
+
+.card span {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  letter-spacing: -2%;
+  text-transform: capitalize;
+}
+/* Cards section Ends here  */
+/* main section Ends here */
+@media (max-width: 975px) {
+  .main {
+    width: 100%;
+  }
+
+  .main h1 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+
+  .main h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+/* register section starts here  */
+.register-container {
+  width: 100%;
+  margin: 50px 0px;
+  background: #191919;
+  padding: 25px 80px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.register-container > h1 {
+  color: #7a40f8;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 70px;
+  letter-spacing: -2%;
+}
+
+.register-container h4 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.register-container > .bottom-bar {
+  margin-bottom: 20px;
+}
+.register-container span {
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -2%;
+}
+
+#register-btn {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#register-btn .button {
+  border-radius: 5px;
+  background: #5325b8;
+  color: #ffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 15px 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* register section starts here  */
+
+/* footer starts here  */
+.footer-container{
+  background: #5325b8;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  width: 80%;
+  height: auto;
+}
+
+.parent-ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0px;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  font-family: "Armata", sans-serif;
+  color:  rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+}
+
+.child-ul> li:first-child{
+  margin-bottom: 12px;
+  position: relative;
+  left: -2px;
+}
+
+.child-ul> li:first-child a{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.rights{
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+  color:  rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+.rights a{
+  text-align: center;
+  font-size: 13px;
+  color:  rgba(255, 255, 255, 0.76);
+  font-family: "Poppins", sans-serif;
+  margin-left: 5px;
+}
