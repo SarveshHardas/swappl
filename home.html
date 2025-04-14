@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sigmar&      display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,14 +34,15 @@
   </script>
   <style>
     @import url('https://fonts.cdnfonts.com/css/special-gothic');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
     .bg-gradient-custom {
       background: linear-gradient(
         to bottom right,
         #ffc88d ,
-        #000000 45%
+        #000000 30%
       );
     }
-  .perspective {
+  /* .perspective {
     perspective: 1000px;
   }
 
@@ -53,6 +56,8 @@
 
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg)  translateY(-60px);
+    width: 100%;
+    height: 100%;
   }
 
   .flip-card-front, .flip-card-back {
@@ -69,14 +74,158 @@
 
   .flip-card-back {
     transform: rotateY(180deg);
-  }
+  } */
+
+  /* .perspective {
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 60px;
+  height: 80px;
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.flip-card:hover {
+  width: 75px;
+  height: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg) translateY(-60px);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+} */
+
+/* .perspective {
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 60px;
+  height: 80px;
+  transition: all 0.6s ease;
+}
+
+.flip-card:hover {
+  width: 75px;
+  height: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg) translateY(-60px);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+} */
+
+.perspective {
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 240px; /* same as w-60 */
+  height: 320px; /* same as h-80 */
+  transition: all 0.5s ease;
+}
+
+.flip-card:hover {
+  width: 300px; 
+  height: 400px; 
+  transform: translateY(-60px);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.logo{
+  width: 70px; 
+  height: 70px;
+}
+/* .circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+} */
   </style>
 </head>
 <body class="bg-gradient-custom text-white">
   <section id="home">
-  <header id="" class="bg-[#5325b8] w-full">
+  <header class="bg-[#5325b8] w-full">
     <nav class="flex items-center justify-between max-w-6xl mx-auto h-15">
-      <h1 class="text-4xl text-white tracking-wide font-bold" style="font-family: 'Special Gothic Condensed', sans-serif;">
+      <h1 class="text-4xl text-white tracking-wide font-bold" style="font-family: 'Gothic A1', sans-serif; font-weight: bolder;">
         SWAPPLE
       </h1>
       <div class="flex items-center gap-6">
@@ -95,7 +244,7 @@
     
     <div id="sidebarMenu" class="fixed top-0 right-0 h-full bg-[#5325b8] bg-opacity-80 z-50 hidden flex-col items-center pt-16 shadow-lg transform transition-transform duration-300" style="width: 391px; border-bottom-left-radius: 150px;">
       <div class="text-orange-500 text-3xl font-bold mb-8">MENU</div>
-      <a href="#" class="text-white text-3xl font-semibold mb-4 hover:text-gray-200 w-64 text-center pb-3 border-b border-white/20">HOME</a>
+      <a href="#homr" class="text-white text-3xl font-semibold mb-4 hover:text-gray-200 w-64 text-center pb-3 border-b border-white/20">HOME</a>
       <a href="#" class="text-white text-xl font-semibold mb-4 hover:text-gray-200 w-64 text-center pb-3 border-b border-white/20">OUR SERVICES</a>
       <a href="#" class="text-white text-xl font-semibold mb-4 hover:text-gray-200 w-64 text-center pb-3 border-b border-white/20">OUR TEAM</a>
       <a href="#" class="text-white text-xl font-semibold mb-4 hover:text-gray-200 w-64 text-center pb-3 border-b border-white/20">CAREERS</a>
@@ -123,14 +272,14 @@
       });
     }
   </script>  
-  <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-gradient-custom">
+  <section class="flex flex-col md:flex-row min-h-screen items-center justify-between px-6 md:px-20 py-16 bg-gradient-custom">
     <div class="md:w-1/2 text-left space-y-6">
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" style="font-family: 'Gothic A1',sans-serif; font-weight: bold;">
         <span class="whitespace-nowrap">TURNING YOUR <span style="color: #5325b8;">DREAMS</span>,</span><br />
         INTO <span style="color: #5325b8;">REALITY</span>
       </h1>      
-      <p class="text-white text-lg max-w-md">
-        <span style="color: #ff9e8e;" class="font-semibold">Swapple Solutions Pvt Ltd</span> is a fast-growing company,
+      <p class="text-white text-lg max-w-md" style="font-family: 'Lexend',sans-serif;>
+        <span class="font-semibold" style="color: #ff9e8e;"">Swapple Solutions Pvt Ltd</span> is a fast-growing company,
         innovating to solve future challenges. We empower businesses with cutting-edge technology and strategies.
       </p>
       <button class="text-white px-6 py-2 rounded-full transition duration-300" style="border: 2px solid #5325b8; color: #5325b8;" onmouseover="this.style.backgroundColor='#5325b8'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5325b8';">
@@ -139,66 +288,89 @@
     </div>
   
     <div class="md:w-1/2 mt-10 md:mt-12 flex justify-center md:justify-end">
-      <img src="./homepg-video.gif" alt="Tech animation" class="w-64 md:w-[360px] object-contain" />
+      <img src="./assets/homepg-video.gif" alt="Tech animation" class="w-64 md:w-[360px] object-contain"/>
     </div>
   </section>
   
     </div>
   </div>
 
-  <div class="bg-[#5325b8] text-center py-3 text-sm font-medium tracking-widest">
-    <marquee>
-    <span class="mx-5">#HIRING</span> |
-    <span class="mx-5">#GROWING</span> |
-    <span class="mx-5">#SWAPPLERS</span> |
-    <span class="mx-5 text-red-300">GRISHHHHH</span> |
-    <span class="mx-5"><a href="#">WHAT'S NEW?</a></span>
+  <div class="flex flex-row text-center  font-medium tracking-widest">
+    <marquee style="background-color: #5325b8; display: flex; align-items: center; justify-content: center">
+      <span class="mx-5">#HIRING</span> |
+      <span class="mx-5">#GROWING</span> |
+      <span class="mx-5">#SWAPPLERS</span> |
+      <span class="mx-5 text-red-300">GRISHHHHH</span> |
+      <span class="mx-5"><a href="#">WHAT'S NEW?</a></span>
     </marquee>
+    <a href="#"><img src="./assets/nav.png" alt="navigate" style="width: 40px; height: 40px;"/></a>
   </div>
 </section>
-  <div class="flex justify-center items-center mt-[200px] mb-[200px]">
+  <div class="flex justify-center items-center mt-[10%]">
     <div class="flex justify-center items-center mr-[20px]  w-[306px] h-[306px] bg-[#5325b8] rounded-2xl p-5 relative overflow-hidden">
-      <div class="flex gap-2">
-        <!-- <img class="h-20 w-20" src="./translate.png" alt="translate"/> -->
+      <div class="top-left absolute top-5 left-5">
+        <img  src="./assets/translate.png" class="w-20 h-20" alt="translate"/>
       </div>
-      <div class="w-12 h-12 flex justify-center items-center text-yellow-400 text-4xl"></div>
+      <div class="bottom-right absolute bottom-5 right-5">
+        <img src="./assets/sun.png" class="w-20 h-20" alt="translate"/>
+      </div>
     </div>
     <h1 class="text-4xl md:text-6xl font-extrabold fontFamily-Bayon leading-tight">INNOVATE.<br><span>TRANSFORM. EXCEL.</span><p class="text-2xl">empowering businesses through <br>Technology, Strategy and Innovation</p></h1>
   </div>
 
   <section id="our-businesses">
-  <div class="ml-[200px] mt-[200px] mb-[100px]">
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" style="font-family: 'Special Gothic Condensed', sans-serif;">OUR BUSINESSES</h1>
-    <p class="fontFamily-bayon mt-[40px]">Swapple solution operates across <br>tech, e-commerce, consulting<br> and product innovation-delivering smart, scalable solutions.</p>
-  </div>
-  <div class="flex justify-center gap-[150px] p-4 ">
-      <div class="card flip-card w-48 h-64 perspective">
+    <div class="ml-[14.5%] mt-[10%] mb-[100px]">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight" style="font-family: 'Gothic A1', sans-serif;">OUR BUSINESSES</h1>
+      <p style="font-family: 'Gothic A1',sans-serif; margin-top: 40px;">Swapple solution operates across <br>tech, e-commerce, consulting<br> and product innovation-delivering smart, scalable solutions.</p>
+    </div>
+    <div class="flex justify-center gap-[100px] p-4">
+      <div class="card flip-card perspective transition-all duration-500">
         <div class="flip-card-inner">
           <div class="flip-card-front bg-[#191919] rounded-lg flex items-center justify-center text-[#5325b8] text-4xl font-bold">
             <div class="top-left absolute top-5 left-5">A</div>
             <div class="bottom-right absolute bottom-5 right-5 inverted">A</div>
           </div>
           <div class="flip-card-back bg-[#5325b8] rounded-lg p-4 text-white">
-            <div class="text-4xl font-bold mb-2">A</div>
-            <div class="text-xl font-semibold">HYPE-VIPE</div>
-            <div class="text-sm mt-2">An AI driven social media management company / Agency.</div>
+            <div class="w-16 h-16 mx-auto rounded-md flex items-center justify-center mb-8">
+              <span class="text-6xl font-bold text-white">A</span>
+            </div>
+            <div class="flex items-center justify-center space-x-4 mb-4">
+              <div class="w-16 h-16 bg-black flex items-center justify-center">
+                <img src="./assets/hv.png" alt="Hype Vipe" />
+              </div>
+              <h1 class="text-2xl font-bold tracking-wide">HYPE VIPE</h1>
+            </div>
+            <p class="text-white text-sm leading-relaxed flex justify-center align-center" style="font-family: 'lexend',sans-serif;">
+              Hype Vipe is an AI-powered digital growth platform revolutionizing how brands connect, engage, and scale across social media.
+            </p>
           </div>
         </div>
       </div>
-      <div class="card flip-card w-48 h-64 perspective">
+    
+      <div class="card flip-card perspective transition-all duration-500">
         <div class="flip-card-inner">
           <div class="flip-card-front bg-[#191919] rounded-lg flex items-center justify-center text-[#5325b8] text-4xl font-bold">
             <div class="top-left absolute top-5 left-5">B</div>
             <div class="bottom-right absolute bottom-5 right-5 inverted">B</div>
           </div>
           <div class="flip-card-back bg-[#5325b8] rounded-lg p-4 text-white">
-            <div class="text-4xl font-bold mb-2">B</div>
-            <div class="text-xl font-semibold">HYPE-VIPE</div>
-            <div class="text-sm mt-2">An AI driven social media management company / Agency.</div>
+            <div class="w-16 h-16 mx-auto rounded-md flex items-center justify-center mb-8">
+              <span class="text-6xl font-bold text-white">B</span>
+            </div>
+            <div class="flex items-center justify-center space-x-4 mb-4">
+              <div class="w-10 h-10 bg-black flex items-center justify-center">
+                <img src="./assets/swappl.png" alt="Swappl" />
+              </div>
+              <h1 class="text-2xl font-bold tracking-wide">LEAD SWAP</h1>
+            </div>
+            <p class="text-white text-sm leading-relaxed flex justify-center align-center" style="font-family: 'lexend',sans-serif;">
+              LeadSwap AI is an advanced lead generation platform that helps businesses discover high-intent leads with verified contact information.
+            </p>
           </div>
         </div>
       </div>
-      <div class="card flip-card w-48 h-64 perspective">
+    
+      <div class="card flip-card perspective transition-all duration-500">
         <div class="flip-card-inner">
           <div class="flip-card-front bg-[#191919] rounded-lg flex items-center justify-center text-[#5325b8] text-4xl font-bold">
             <div class="top-left absolute top-5 left-5">C</div>
@@ -206,20 +378,19 @@
           </div>
           <div class="flip-card-back bg-[#5325b8] rounded-lg p-4 text-white">
             <div class="text-4xl font-bold mb-2">C</div>
-            <div class="text-xl font-semibold">HYPE-VIPE</div>
-            <div class="text-sm mt-2">An AI driven social media management company / Agency.</div>
+            <div class="text-2xl font-bold mb-1">⌛</div>
+            <div class="text-xl font-semibold">Coming Soon...</div>
+            <!-- <div class="text-sm mt-2">An AI driven social media management company / Agency.</div> -->
           </div>
         </div>
       </div>
     </div>
+    
+
     <div class="flex items-center justify-center mt-[100px] mb-[100px]">
-      <div class="flex items-center justify-center w-64 h-20 border-4 border-[#5325b8] rounded-lg">
+      <div class="flex flex-row items-center justify-center w-64 h-20 border-4 border-[#5325b8] rounded-lg">
         <span class="text-3xl font-bold text-[#5325b8]">VIEW</span>
-        <!-- <span class="ml-4 flex items-center justify-center w-10 h-10 bg-[#5325b8] rounded">
-          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2V7zm0 8h2v2h-2v-2z"/>
-          </svg>
-        </span> -->
+        <img src="./assets/nav.png" alt="navigate" style="width: 35px; height: 35px;"/>
       </div>
     </div>
     <div class="bg-[#5325b8] text-center py-3 text-sm font-medium tracking-widest">
@@ -243,8 +414,8 @@
       <p class="text-white text-base text-2xl">
         Unlock your potential with the Swappl-Ship Program! Gain<br>hands-on experience, work on real-world projects, and<br>collaborate with industry experts. Elevate your skills and<br>kick-start your career with us!
       </p>
-      <div class="flex items-center justify-center w-60 h-15 border-4 border-[#5325b8] rounded-lg ml-[35%] mt-[35px]">
-        <a href="./internship.html"><span class="text-3xl font-bold text-[#5325b8]">VIEW</span></a>
+      <div class="flex justify-end mt-[3%] mr-[2%]">
+        <a href="./internship.html"><img src="./assets/nav.png" alt="navigate" style="width: 35px; height: 35px;"/></a>
       </div>
       </div>
     </div>
